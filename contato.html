@@ -14,6 +14,16 @@
     <link href="https://fonts.google.com/specimen/Pacifico?query=paci" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
 
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  (function() {
+  emailjs.init('iD-Q4TAwL-KxCBYc-');
+})();
+</script>
+
+    
   </head>
 
   <body>
@@ -63,11 +73,11 @@
         <hr>
         <form action="contato.html" method="get">
             <div>
-                <input type="text" placeholder=" Nome" id="Name">
+                <input type="text" placeholder=" Nome" id="name">
             </div>
 
             <div>
-                <input type="tel" id="Telephone" placeholder=" Telefone">
+                <input type="tel" id="telephone" placeholder=" Telefone">
             </div>
 
             <div>
@@ -79,8 +89,9 @@
             </div>
 
             <div class="button">
-                <button type="submit">Enviar</button>
+                <button type="submit" onclick="Submit();">Enviar</button>
             </div>
+            
 
         </form>
         </div>
@@ -124,5 +135,7 @@
 
     </footer>
 
+
+    <script src="script.js"></script>
   </body>
 </html>
